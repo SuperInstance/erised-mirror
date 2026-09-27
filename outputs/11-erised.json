@@ -1,6 +1,6 @@
 {
   "tool": "erised",
-  "run_at": "2026-09-27T03:02:31.089Z",
+  "run_at": "2026-09-27T03:03:32.468Z",
   "is": [
     {
       "name": "exoj",
@@ -76,11 +76,11 @@
     },
     {
       "name": "quilt-tools",
-      "commits": 1,
+      "commits": 2,
       "first": "2026-09-27",
       "last": "2026-09-27",
-      "subject": "quilt-tools: 10-tool portfolio + tool 11 ERISED — the fleet's mirror (gi",
-      "dirty": 5,
+      "subject": "quilt-tools: tool 12 ERISED-TRENDS — the mirror diffed over waves (trend",
+      "dirty": 4,
       "remote": false
     },
     {
@@ -103,7 +103,7 @@
     }
   ],
   "chains": {
-    "ok": 46,
+    "ok": 47,
     "bad": 0,
     "asFound": 4
   },
@@ -162,14 +162,14 @@
     "verdict": {
       "ok": true,
       "brokenAt": null,
-      "head": "e0047d8a3daa62b1",
+      "head": "a6a3aeb678cb36dc",
       "count": 1
     },
     "rows": [
       {
         "event": "mirror-run",
         "repos": 11,
-        "chains_ok": 46,
+        "chains_ok": 47,
         "chains_bad": 0,
         "desires": 12,
         "edges": [
@@ -179,7 +179,7 @@
         ],
         "seq": 0,
         "prev_hash": "0000000000000000",
-        "row_hash": "e0047d8a3daa62b1"
+        "row_hash": "a6a3aeb678cb36dc"
       }
     ]
   }

@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "from": "wave-001",
+    "to": "wave-002",
+    "generated_at": "2026-09-27T03:03:20.003Z",
+    "comparability": "derived from snapshot data only"
+  },
+  "diff": {
+    "from": "wave-001",
+    "to": "wave-002",
+    "repos_changed": [
+      {
+        "repo": "quilt-tools",
+        "head": {
+          "from": "5a0881db4220",
+          "to": "729a390e1e82"
+        },
+        "commits": {
+          "from": 1,
+          "to": 2,
+          "delta": 1
+        },
+        "dirty": {
+          "from": 5,
+          "to": 0
+        }
+      }
+    ],
+    "repos_added": [],
+    "repos_removed": [],
+    "chains_grown": [],
+    "chains_shrunk": [],
+    "chains_new": [],
+    "chains_closed": [],
+    "threads": {
+      "from": 12,
+      "to": 12,
+      "new": 0,
+      "closed": 0,
+      "new_examples": [],
+      "closed_examples": []
+    },
+    "kinship": {
+      "top_changed": false,
+      "pairs": [
+        {
+          "a": "quilt-arch",
+          "b": "quilt-raw",
+          "cos": 0.743,
+          "from": 0.743,
+          "delta": 0
+        },
+        {
+          "a": "quilt-arch",
+          "b": "quilt-silicon",
+          "cos": 0.637,
+          "from": 0.637,
+          "delta": 0
+        },
+        {
+          "a": "quilt-arch",
+          "b": "ropesight",
+          "cos": 0.636,
+          "from": 0.636,
+          "delta": 0
+        }
+      ]
+    },
+    "edges_added": [],
+    "edges_removed": []
+  }
+}
