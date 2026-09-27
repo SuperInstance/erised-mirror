@@ -1,0 +1,41 @@
+{
+  "tool": "erised-trends",
+  "run_at": "2026-09-27T03:02:32.359Z",
+  "mode": "capture+baseline",
+  "wave": "wave-001",
+  "snapshot_digest": "59b4c16a54a19f6d",
+  "prior": null,
+  "witness": {
+    "verdict": {
+      "ok": true,
+      "brokenAt": null,
+      "head": "96246af85edea321",
+      "count": 2
+    },
+    "rows": [
+      {
+        "event": "witness-open",
+        "by": "erised-trends tool 12",
+        "law": "every wave capture is receipted here; the mirror itself can read this chain back once it has >= 3 rows (mirror-visible from wave 003)",
+        "seq": 0,
+        "prev_hash": "0000000000000000",
+        "row_hash": "1647cc1f15f44792"
+      },
+      {
+        "event": "wave-capture",
+        "wave": "wave-001",
+        "digest": "59b4c16a54a19f6d",
+        "repos": 11,
+        "commits": 44,
+        "chains": 46,
+        "threads": 12,
+        "kin_top": "quilt-arch~quilt-raw@0.743",
+        "prior": null,
+        "diff": "baseline",
+        "seq": 1,
+        "prev_hash": "1647cc1f15f44792",
+        "row_hash": "96246af85edea321"
+      }
+    ]
+  }
+}

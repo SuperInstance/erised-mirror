@@ -1,6 +1,6 @@
 {
   "tool": "erised",
-  "run_at": "2026-09-27T02:22:38.537Z",
+  "run_at": "2026-09-27T03:02:31.089Z",
   "is": [
     {
       "name": "exoj",
@@ -8,6 +8,15 @@
       "first": "2026-09-26",
       "last": "2026-09-26",
       "subject": "exoj: core JS port + 4 experiments — POCs 8/8 PASS; E-X1 seed policy VIO",
+      "dirty": 0,
+      "remote": false
+    },
+    {
+      "name": "fleet-seeds",
+      "commits": 2,
+      "first": "2026-09-27",
+      "last": "2026-09-27",
+      "subject": "tavern round two: LIVE guests sealed as-said — MOTH graph-v1 quantum coi",
       "dirty": 0,
       "remote": false
     },
@@ -66,6 +75,15 @@
       "remote": false
     },
     {
+      "name": "quilt-tools",
+      "commits": 1,
+      "first": "2026-09-27",
+      "last": "2026-09-27",
+      "subject": "quilt-tools: 10-tool portfolio + tool 11 ERISED — the fleet's mirror (gi",
+      "dirty": 5,
+      "remote": false
+    },
+    {
       "name": "ropesight",
       "commits": 3,
       "first": "2026-09-26",
@@ -76,21 +94,20 @@
     },
     {
       "name": "yiluodi",
-      "commits": 1,
+      "commits": 2,
       "first": "2026-09-27",
       "last": "2026-09-27",
-      "subject": "yiluodi 已落地 v0.1.0 — the hello-world for SuperInstance",
-      "dirty": 2,
+      "subject": "outputs: honest L4 re-run receipt — R3 wall-clock timing varies by run (",
+      "dirty": 0,
       "remote": false
     }
   ],
   "chains": {
-    "ok": 45,
+    "ok": 46,
     "bad": 0,
     "asFound": 4
   },
   "open": [
-    "- Task 20-c (E37 trust lane: echo-structure admission bar + trust-layer re-probation) brief prepared per E36's carried seed; dispatch attempts were timing out at write time — brief parked here for the next lane to pick up verbatim",
     "Task ID: 21 (push log + parked brief)",
     "Task: record pushes; park the E40 brief for the next wave",
     "- Honest limits: JS BigInt/Rust-vs-WGSL divergence tested against the seed's TEXT (no Rust/WGSL compiler in this lane — the Python int reference is the independent substrate); correlate null-corner semantics are a defined contract (seed leaves the corner faulting); journal git-commit tier parked",
@@ -101,7 +118,8 @@
     "- Next wave: E42 ALIGN change-point (the receipted handoff), quilt-stone (unified receipt-chain module — one verifier for every repo's chain), ropesight (seed-story permutation-algebra rota module)",
     "- NOT pushed (house rule: main pushes); siblings untouched (read-only)",
     "- Back-burner seeded per the user's brief: BACKBURNER.md keeps the jigsaw vision whole + e_l3's two cents (exact 15-entry lookup, 0 ops vs 300000, pruning price curve 0 -> 4.8e-4) + the next unassigned cents",
-    "- PUSH BLOCKED (session has no GH token; push attempt failed with \"could not read Username\"; secret sweep CLEAN): local commit 784fd62 ready — needs a rolled token to create SuperInstance/yiluodi and push"
+    "- PUSH BLOCKED (session has no GH token; push attempt failed with \"could not read Username\"; secret sweep CLEAN): local commit 784fd62 ready — needs a rolled token to create SuperInstance/yiluodi and push",
+    "- Standing state: 13 repos ours-and-synced (murmur dba fiction exoj raw arch silicon stone ropesight yiluodi fleet-seeds erised-mirror + murmur-remote), live lanes warm (MOTH + SystemOne keys in .env), next: E-C2 yiluodi chaos per the coin"
   ],
   "resonates": [
     {
@@ -136,30 +154,32 @@
     }
   ],
   "edges": [
-    "quilt-silicon->quilt-arch"
+    "fleet-seeds->quilt-stone",
+    "quilt-silicon->quilt-arch",
+    "quilt-tools->quilt-stone"
   ],
   "witness": {
     "verdict": {
       "ok": true,
       "brokenAt": null,
-      "head": "81ec15b3dee82734",
+      "head": "e0047d8a3daa62b1",
       "count": 1
     },
     "rows": [
       {
-        "0": "m",
-        "1": "i",
-        "2": "r",
-        "3": "r",
-        "4": "o",
-        "5": "r",
-        "6": "-",
-        "7": "r",
-        "8": "u",
-        "9": "n",
+        "event": "mirror-run",
+        "repos": 11,
+        "chains_ok": 46,
+        "chains_bad": 0,
+        "desires": 12,
+        "edges": [
+          "fleet-seeds->quilt-stone",
+          "quilt-silicon->quilt-arch",
+          "quilt-tools->quilt-stone"
+        ],
         "seq": 0,
         "prev_hash": "0000000000000000",
-        "row_hash": "81ec15b3dee82734"
+        "row_hash": "e0047d8a3daa62b1"
       }
     ]
   }

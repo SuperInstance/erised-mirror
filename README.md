@@ -1,12 +1,13 @@
-# Quilt Tools — ten working prototypes, one reactive runtime
+# Quilt Tools — twelve working prototypes, one reactive runtime
 
-Ten tools built on [SuperInstance/quilt](https://github.com/SuperInstance/quilt)
+Twelve tools built on [SuperInstance/quilt](https://github.com/SuperInstance/quilt)
 (v0.3.0, the play-test-patched engine — 11 patches, all 36 upstream tests green).
 Each tool is a single file, runs in seconds, ends with its own verification
 verdict, and is deliberately shaped so an engineer can lift the pattern and
 drop in their use case.
 
-**Latest sweep: 75/75 checks green across all ten.**
+**Latest sweep: 75/75 across tools 01–10, plus the fleet rounds: mirror 6/6,
+trends 6/6.**
 
 ```bash
 node tools/01-fleet-pager.mjs        # any tool, no build step, no config
@@ -30,6 +31,8 @@ mode is printed, never silent.
 | 08 | `approvals` | SaaS workflow | One sheet, three tenants: caller-aware policy answers, cross-tenant approval refused at the cell, memoized per (tenant, input). | 9/9 |
 | 09 | `habit-atlas` | Health / coaching | Habits as physics: momentum with slow gains and gentle decay, streaks for motivation, days append-only and fenced. | 8/8 |
 | 10 | `pipeline-guard` | Data engineering | Schema as editable data: precise rejection reasons, a dead-letter cell you can fix and replay, schema evolution without a deploy. | 9/9 |
+| 11 | `erised` | Fleet / community | The fleet's mirror: git vitals, 46 chains verified through the Stone with genesis discovery, open threads read from the worklog, local-embed kinship, import edges. | 6/6 |
+| 12 | `erised-trends` | Fleet / time | The mirror diffed over waves: deterministic wave snapshots in `trends/`, digest-verified, diffed honestly (chains grown/shrunk, threads new/closed, kinship drift); first run = baseline, a receipted outcome. | 6/6 |
 
 ## The five idioms every tool shares
 
