@@ -1,0 +1,397 @@
+{
+  "meta": {
+    "wave": 1,
+    "label": "wave-001",
+    "tool": "erised-embassy",
+    "captured_at": "2026-09-27T05:25:25.033Z",
+    "digest": "b2fb1d589b0dcccc",
+    "comparability": "data only; meta whitelisted out of comparison; network law: census+READMEs fetched once, chain artifacts fetched twice, derivation run twice"
+  },
+  "data": {
+    "census": {
+      "org": "SuperInstance",
+      "method": "graphql-user-repositories-orderBy:PUSHED_AT-DESC",
+      "pages": 51,
+      "total": 5030,
+      "partial": false
+    },
+    "vitals": {
+      "repos_total": 5030,
+      "forks": 815,
+      "private_repos": 203,
+      "active_today": 32,
+      "active_week": 366,
+      "foreign_total": 5018,
+      "foreign_active_today": 20,
+      "foreign_active_week": 354,
+      "top20_foreign_active": [
+        {
+          "name": "AI-Writings",
+          "pushed_at": "2026-09-27T05:12:28Z",
+          "description": "Creative writing, essays, and philosophical explorations from the Exocortex project"
+        },
+        {
+          "name": "jev-quilt",
+          "pushed_at": "2026-09-27T04:58:52Z",
+          "description": "JEV for quilt as understood output: cellular-first decision substrate — typed cells, hook-"
+        },
+        {
+          "name": "pong-quilt",
+          "pushed_at": "2026-09-27T04:44:32Z",
+          "description": ""
+        },
+        {
+          "name": "substrate-llm-client",
+          "pushed_at": "2026-09-27T04:12:32Z",
+          "description": "Multi-provider LLM client with JEV gating"
+        },
+        {
+          "name": "polln",
+          "pushed_at": "2026-09-27T03:43:23Z",
+          "description": "SuperInstance Visualized in Spreadsheets for Tile Intelligence in real-time workflows, sim"
+        },
+        {
+          "name": "superinstance-website",
+          "pushed_at": "2026-09-26T23:43:40Z",
+          "description": "Static website for superinstance.ai — fleet dashboard, ecosystem map, and ternary computin"
+        },
+        {
+          "name": "quilt-fiction",
+          "pushed_at": "2026-09-26T23:32:35Z",
+          "description": "The quilt as operational fiction — instances-as-sheets, Delta protocol, reputation beta>al"
+        },
+        {
+          "name": "SuperInstance",
+          "pushed_at": "2026-09-26T23:21:36Z",
+          "description": ""
+        },
+        {
+          "name": "fleet-murmur",
+          "pushed_at": "2026-09-26T23:08:48Z",
+          "description": "CCC agent workspace — logs, bottles, fleet coordination data. Not a library."
+        },
+        {
+          "name": "moth-waveform",
+          "pushed_at": "2026-09-26T23:08:30Z",
+          "description": "Quantum resonance hearing for spline-tension waveform extrapolation — temporal variables a"
+        },
+        {
+          "name": "SuperInstance-papers",
+          "pushed_at": "2026-09-26T21:10:28Z",
+          "description": "Automatically Deconstruct logic into Spread Sheet Tiles and Cells, Instances Interconnecte"
+        },
+        {
+          "name": "quiltcall",
+          "pushed_at": "2026-09-26T20:04:33Z",
+          "description": ""
+        },
+        {
+          "name": "quality-gate-stream",
+          "pushed_at": "2026-09-26T19:06:18Z",
+          "description": "Quality Gate Stream — novelty × correctness × completeness × depth scoring. Part of Cocapn"
+        },
+        {
+          "name": "quilt-doctor",
+          "pushed_at": "2026-09-26T17:50:10Z",
+          "description": ""
+        },
+        {
+          "name": "quilt-arcade",
+          "pushed_at": "2026-09-26T17:03:01Z",
+          "description": "Five spreadsheet games (tictactoe, reversi, connect4, gomoku, texas hold-em) — rules as ce"
+        },
+        {
+          "name": "quilt-bootstrap",
+          "pushed_at": "2026-09-26T16:44:06Z",
+          "description": "Bring up the Quilt fleet in a fresh sandbox. One command."
+        },
+        {
+          "name": "quilt-brewer",
+          "pushed_at": "2026-09-26T16:44:05Z",
+          "description": "Grow new substrate walkers from recipes. The 6th-layer substrate walker."
+        },
+        {
+          "name": "plato-portal",
+          "pushed_at": "2026-09-26T09:41:54Z",
+          "description": "Python SDK for persistent multi-agent systems — agents with markdown memory, in-memory fle"
+        },
+        {
+          "name": "quilt-cowboy",
+          "pushed_at": "2026-09-26T09:12:41Z",
+          "description": "The cowboy: reflection loop, morning ritual, and real-time reactor for the Quilt ecosystem"
+        },
+        {
+          "name": "git-agent",
+          "pushed_at": "2026-09-26T09:11:49Z",
+          "description": "🦀 Repo-native agent that lives in git — the shell IS the agent."
+        }
+      ],
+      "ours_seen_in_census": [
+        {
+          "name": "erised-mirror",
+          "pushed_at": "2026-09-27T04:07:19Z"
+        },
+        {
+          "name": "exoj",
+          "pushed_at": "2026-09-27T04:01:42Z"
+        },
+        {
+          "name": "fleet-seeds",
+          "pushed_at": "2026-09-27T05:02:06Z"
+        },
+        {
+          "name": "quilt-arch",
+          "pushed_at": "2026-09-27T02:30:59Z"
+        },
+        {
+          "name": "quilt-dba",
+          "pushed_at": "2026-09-27T04:02:06Z"
+        },
+        {
+          "name": "quilt-murmur",
+          "pushed_at": "2026-09-27T03:21:37Z"
+        },
+        {
+          "name": "quilt-raw",
+          "pushed_at": "2026-09-26T23:32:40Z"
+        },
+        {
+          "name": "quilt-silicon",
+          "pushed_at": "2026-09-26T23:32:47Z"
+        },
+        {
+          "name": "quilt-stone",
+          "pushed_at": "2026-09-27T04:20:53Z"
+        },
+        {
+          "name": "quilt-tools",
+          "pushed_at": "2026-09-27T02:42:47Z"
+        },
+        {
+          "name": "ropesight",
+          "pushed_at": "2026-09-27T00:40:14Z"
+        },
+        {
+          "name": "yiluodi",
+          "pushed_at": "2026-09-27T03:21:12Z"
+        }
+      ]
+    },
+    "foreign_chains": [
+      {
+        "repo": "pong-quilt",
+        "path": "checkpoints/stone-v1.json",
+        "found": true,
+        "bytes": 1299,
+        "stable": true,
+        "shape": "stone-v1",
+        "verdict": "verified",
+        "links": 5,
+        "tip": "ffe8abd842162d717ff274fdd3c21c58622df9ede534f6b540f2ae16b69f5503",
+        "genesis": "ffe8abd842162d717ff274fdd3c21c58622df9ede534f6b540f2ae16b69f5503"
+      },
+      {
+        "repo": "pong-quilt",
+        "path": "stone.json",
+        "found": false,
+        "http_status": 404
+      },
+      {
+        "repo": "pong-quilt",
+        "path": "receipts/ledger.jsonl",
+        "found": false,
+        "http_status": 404
+      },
+      {
+        "repo": "jev-quilt",
+        "path": "checkpoints/stone-v1.json",
+        "found": false,
+        "http_status": 404
+      },
+      {
+        "repo": "jev-quilt",
+        "path": "stone.json",
+        "found": false,
+        "http_status": 404
+      },
+      {
+        "repo": "jev-quilt",
+        "path": "witness.jsonl",
+        "found": false,
+        "http_status": 404
+      },
+      {
+        "repo": "jev-quilt",
+        "path": "receipts/ledger.jsonl",
+        "found": false,
+        "http_status": 404
+      },
+      {
+        "repo": "quilt-canon-witness",
+        "path": "examples/seed-witness.jsonl",
+        "found": true,
+        "bytes": 6276,
+        "stable": true,
+        "shape": "hash-linked-other",
+        "verdict": "not-stone-shaped",
+        "why": "hash-linked chain in a foreign dialect (link fields: prev_hash, witness_id) — stone-v1 arithmetic not applicable; a stranger dialect deserves its own published-spec reader"
+      },
+      {
+        "repo": "quilt-canon-witness",
+        "path": "stone.json",
+        "found": false,
+        "http_status": 404
+      },
+      {
+        "repo": "quilt-canon-witness",
+        "path": "witness.jsonl",
+        "found": false,
+        "http_status": 404
+      }
+    ],
+    "synergy": {
+      "method": "README.md name-mention via org-name-anchored regex; BLUNT by construction — mention != dependency",
+      "edges": [
+        {
+          "from": "jev-quilt",
+          "to": "quilt",
+          "mentions": 8,
+          "how": "name-mention-in-readme"
+        },
+        {
+          "from": "jev-quilt",
+          "to": "quilt-brewer",
+          "mentions": 1,
+          "how": "name-mention-in-readme"
+        },
+        {
+          "from": "jev-quilt",
+          "to": "quilt-studio",
+          "mentions": 1,
+          "how": "name-mention-in-readme"
+        },
+        {
+          "from": "pong-quilt",
+          "to": "quilt",
+          "mentions": 2,
+          "how": "name-mention-in-readme"
+        },
+        {
+          "from": "pong-quilt",
+          "to": "quilt-edge-ml",
+          "mentions": 3,
+          "how": "name-mention-in-readme"
+        },
+        {
+          "from": "quilt-canon-witness",
+          "to": "jev-quilt",
+          "mentions": 1,
+          "how": "name-mention-in-readme"
+        },
+        {
+          "from": "quilt-canon-witness",
+          "to": "quilt",
+          "mentions": 1,
+          "how": "name-mention-in-readme"
+        },
+        {
+          "from": "quilt-canon-witness",
+          "to": "quilt-bootstrap",
+          "mentions": 1,
+          "how": "name-mention-in-readme"
+        },
+        {
+          "from": "quilt-canon-witness",
+          "to": "quilt-brewer",
+          "mentions": 2,
+          "how": "name-mention-in-readme"
+        },
+        {
+          "from": "quilt-canon-witness",
+          "to": "quilt-cli",
+          "mentions": 1,
+          "how": "name-mention-in-readme"
+        },
+        {
+          "from": "quilt-canon-witness",
+          "to": "quilt-fable",
+          "mentions": 2,
+          "how": "name-mention-in-readme"
+        },
+        {
+          "from": "quilt-canon-witness",
+          "to": "quilt-perception",
+          "mentions": 2,
+          "how": "name-mention-in-readme"
+        }
+      ],
+      "unresolved_tokens": {
+        "count": 13,
+        "top": [
+          {
+            "token": "jev",
+            "mentions": 19
+          },
+          {
+            "token": "moth",
+            "mentions": 2
+          },
+          {
+            "token": "flux-2",
+            "mentions": 2
+          },
+          {
+            "token": "jev-local",
+            "mentions": 2
+          },
+          {
+            "token": "jev-ultrafast",
+            "mentions": 2
+          },
+          {
+            "token": "jevlike",
+            "mentions": 2
+          },
+          {
+            "token": "jev-validated",
+            "mentions": 1
+          },
+          {
+            "token": "moth-receipted",
+            "mentions": 1
+          }
+        ]
+      }
+    },
+    "watchlist": [
+      {
+        "repo": "pong-quilt",
+        "why": "foreign fleet ADOPTED stone-v1: r37 seals checkpoints/stone-v1.json at birth (verify-before-write) — the crown-jewel stranger-verification target",
+        "probes": [
+          "checkpoints/stone-v1.json",
+          "stone.json",
+          "receipts/ledger.jsonl"
+        ]
+      },
+      {
+        "repo": "jev-quilt",
+        "why": "G-theory credentials with mmr_root-style hashes (attest.py/diploma.py) — a DIFFERENT dialect; honest not-found expected at stone probe paths",
+        "probes": [
+          "checkpoints/stone-v1.json",
+          "stone.json",
+          "witness.jsonl",
+          "receipts/ledger.jsonl"
+        ]
+      },
+      {
+        "repo": "quilt-canon-witness",
+        "why": "census candidate: \"Cryptographic witness log — append-only ledger for canon events\"; examples/seed-witness.jsonl confirmed present in a pre-run look",
+        "probes": [
+          "examples/seed-witness.jsonl",
+          "stone.json",
+          "witness.jsonl"
+        ]
+      }
+    ]
+  }
+}

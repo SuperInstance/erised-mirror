@@ -1,0 +1,50 @@
+{
+  "tool": "erised-embassy",
+  "run_at": "2026-09-27T05:25:25.035Z",
+  "wave": "wave-001",
+  "snapshot_digest": "b2fb1d589b0dcccc",
+  "local_head": "27b322677e04",
+  "crown_jewel": {
+    "repo": "pong-quilt",
+    "path": "checkpoints/stone-v1.json",
+    "verdict": "verified",
+    "links": 5,
+    "tip": "ffe8abd842162d717ff274fdd3c21c58622df9ede534f6b540f2ae16b69f5503",
+    "bytes": 1299
+  },
+  "witness": {
+    "verdict": {
+      "ok": true,
+      "brokenAt": null,
+      "head": "3a39241bb35b13f2",
+      "count": 2
+    },
+    "rows": [
+      {
+        "event": "witness-open",
+        "by": "erised-embassy tool 13",
+        "law": "every embassy wave is receipted here; inter-fleet contact happens through letters, not force-pushes",
+        "seq": 0,
+        "prev_hash": "0000000000000000",
+        "row_hash": "526c1aa106aabae9"
+      },
+      {
+        "event": "embassy-wave",
+        "wave": "wave-001",
+        "digest": "b2fb1d589b0dcccc",
+        "census_repos": 5030,
+        "foreign_repos": 5018,
+        "foreign_active_today": 20,
+        "foreign_active_week": 354,
+        "probes": 10,
+        "chains_found": 2,
+        "chains_verified": 1,
+        "edges": 12,
+        "self": "erised-mirror@2026-09-27T04:07:19Z",
+        "seq": 1,
+        "prev_hash": "526c1aa106aabae9",
+        "row_hash": "3a39241bb35b13f2"
+      }
+    ]
+  }
+}
