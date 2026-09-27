@@ -1,9 +1,9 @@
 {
   "tool": "erised-embassy",
-  "run_at": "2026-09-27T05:25:25.035Z",
-  "wave": "wave-001",
-  "snapshot_digest": "b2fb1d589b0dcccc",
-  "local_head": "27b322677e04",
+  "run_at": "2026-09-27T05:27:44.556Z",
+  "wave": "wave-002",
+  "snapshot_digest": "9877066336a5edee",
+  "local_head": "b6eac288b8bf",
   "crown_jewel": {
     "repo": "pong-quilt",
     "path": "checkpoints/stone-v1.json",
@@ -16,8 +16,8 @@
     "verdict": {
       "ok": true,
       "brokenAt": null,
-      "head": "3a39241bb35b13f2",
-      "count": 2
+      "head": "771bcd7b7ac3cd69",
+      "count": 3
     },
     "rows": [
       {
@@ -44,6 +44,23 @@
         "seq": 1,
         "prev_hash": "526c1aa106aabae9",
         "row_hash": "3a39241bb35b13f2"
+      },
+      {
+        "event": "embassy-wave",
+        "wave": "wave-002",
+        "digest": "9877066336a5edee",
+        "census_repos": 5030,
+        "foreign_repos": 5018,
+        "foreign_active_today": 20,
+        "foreign_active_week": 354,
+        "probes": 10,
+        "chains_found": 2,
+        "chains_verified": 1,
+        "edges": 12,
+        "self": "erised-mirror@2026-09-27T05:26:00Z",
+        "seq": 2,
+        "prev_hash": "3a39241bb35b13f2",
+        "row_hash": "771bcd7b7ac3cd69"
       }
     ]
   }
