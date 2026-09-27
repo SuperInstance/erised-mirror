@@ -20,7 +20,7 @@ setTool('habit-atlas');
 const DAY = 86400000;
 const t0 = Date.now();
 
-const e = sheet('habit-atlas', [
+const e = await sheet('habit-atlas', [
   // one habit: morning run. (Duplicate this cell set per habit — or generate.)
   { id: 'habit.run', kind: 'value', value: { streak: 0, best: 0, momentum: 0.5, lastDone: null, target: 5 } },
   { id: 'config.decay', kind: 'value', value: 0.25, description: 'momentum lost per missed day' },

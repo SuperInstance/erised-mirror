@@ -44,7 +44,7 @@ const noulFb = t => ({
 const OPTIONS = ['reply-only', 'escalate-human', 'auto-close', 'forward-billing'];
 
 // ── the sheet: policy + gate + receipts ─────────────────────────────────────
-const e = sheet('triagedesk', [
+const e = await sheet('triagedesk', [
   { id: 'ticket.text', kind: 'value', value: '', description: 'current ticket body' },
 
   // System One decisions happen in the tool (the bounded adapter); the SHEET

@@ -19,7 +19,7 @@ import { sheet, WitnessLog, verifyChain, fnv1a64, canon, check, done, setTool, p
 setTool('ledger-seal');
 
 // ── the sheet: append + query, with the ledger as reactive state ────────────
-const e = sheet('ledger-seal', [
+const e = await sheet('ledger-seal', [
   { id: 'ledger.rows', kind: 'value', value: [], description: 'the append-only witness chain' },
 
   // retention policy as a formula: everything older than 90d may archive

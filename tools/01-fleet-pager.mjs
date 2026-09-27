@@ -20,7 +20,7 @@ import { sheet, WitnessLog, check, done, setTool, panel, kv, ANSI } from '../qui
 setTool('fleet-pager');
 
 // ── the sheet: the entire paging policy, visible ─────────────────────────────
-const e = sheet('fleet-pager', [
+const e = await sheet('fleet-pager', [
   // golden-signal sensors (swap for your scraper)
   { id: 'svc.latency',    kind: 'sensor', default: 120,  description: 'p95 latency, ms (SLO 300)' },
   { id: 'svc.error_rate', kind: 'sensor', default: 0.2,  description: 'error rate, % (SLO 0.5)' },

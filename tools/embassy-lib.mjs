@@ -23,11 +23,15 @@ const RAW = 'https://raw.githubusercontent.com';
 const GQL = 'https://api.github.com/graphql';
 
 // ── token: in-memory only ───────────────────────────────────────────────────
+// Reads GH_TOKEN from a .env file at envPath if present; otherwise falls back
+// to process.env.GH_TOKEN. Never logs, echoes, or throws on the token value.
 export function loadToken(envPath) {
   try {
     const m = /^GH_TOKEN=(.*)$/m.exec(fs.readFileSync(envPath, 'utf8').trim());
-    return m ? m[1].trim() : null;
-  } catch { return null; }
+    if (m) return m[1].trim();
+  } catch { /* file missing/unreadable — fall through to env */ }
+  const env = process.env.GH_TOKEN;
+  return env ? env.trim() : null;
 }
 
 // ── raw CDN fetch (no API quota; 404 is an honest not-found, not an error) ──

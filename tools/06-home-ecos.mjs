@@ -22,7 +22,7 @@ import { sheet, WitnessLog, check, done, setTool, panel, kv, ANSI } from '../qui
 
 setTool('home-ecos');
 
-const e = sheet('home-ecos', [
+const e = await sheet('home-ecos', [
   // sensors (pushed by the bridge)
   { id: 'home.power',     kind: 'sensor', default: 90, description: 'whole-home power, W' },
   { id: 'home.temp',      kind: 'sensor', default: 21.0, description: 'inside temp, °C' },

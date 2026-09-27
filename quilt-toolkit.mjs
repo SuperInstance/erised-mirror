@@ -19,8 +19,28 @@
 // Every tool runs fully offline unless a live model is reachable; offline
 // mode is labeled, never silent.
 
-import { QuiltEngine } from '/home/z/my-project/quilt-playtest/packages/core/dist/index.js';
-export { QuiltEngine };
+// ── QuiltEngine wiring (lazy) ────────────────────────────────────────────────
+// The engine dist is loaded on first use of sheet()/QuiltEngine, not at import
+// time. Tools that never touch the engine (11/12/13) import this module fine
+// even when the dist is absent. Override the dist path with QUILT_DIST.
+const DEFAULT_QUILT_DIST = '/home/z/my-project/quilt-playtest/packages/core/dist/index.js';
+let _QuiltEngine = null;
+
+async function loadQuiltEngine() {
+  if (_QuiltEngine) return _QuiltEngine;
+  const dist = process.env.QUILT_DIST || DEFAULT_QUILT_DIST;
+  try {
+    const mod = await import(dist);
+    _QuiltEngine = mod.QuiltEngine;
+    return _QuiltEngine;
+  } catch (e) {
+    throw new Error(
+      `QuiltEngine dist unavailable at ${dist} (${e.message}). ` +
+      `Set QUILT_DIST to override the path. ` +
+      `This only affects tools that use sheet()/QuiltEngine — tools 11/12/13 do not.`
+    );
+  }
+}
 
 // ── witness idiom (quilt-cloudflare/src/ocean.ts, ported verbatim) ──────────
 export const GENESIS_PREV = '0'.repeat(16);
@@ -107,7 +127,8 @@ export function kv(k, v, kColor = ANSI.dim) {
 }
 
 // ── convenience sheet builder ────────────────────────────────────────────────
-export function sheet(id, cells, opts = {}) {
+export async function sheet(id, cells, opts = {}) {
+  const QuiltEngine = await loadQuiltEngine();
   const e = new QuiltEngine(id, { eager: true, ...opts });
   e.loadSheet({ id, cells });
   return e;

@@ -27,7 +27,7 @@ const SCHEMA_V1 = {
   qty:      { type: 'number', required: true, min: 1, max: 100 },
 };
 
-const e = sheet('pipeline-guard', [
+const e = await sheet('pipeline-guard', [
   { id: 'schema.version', kind: 'value', value: { v: 1, fields: SCHEMA_V1 }, description: 'the fence, as editable data' },
 
   { id: 'pipe.accepted', kind: 'value', value: [] },

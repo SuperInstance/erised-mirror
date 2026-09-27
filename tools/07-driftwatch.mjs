@@ -17,7 +17,7 @@ import { sheet, WitnessLog, check, done, setTool, panel, kv, ANSI } from '../qui
 
 setTool('driftwatch');
 
-const e = sheet('driftwatch', [
+const e = await sheet('driftwatch', [
   { id: 'metrics.accuracy', kind: 'sensor', default: 0.92, description: 'the vital sign (any 0-1 metric works)' },
 
   { id: 'watch.window', kind: 'value', value: [], description: 'last 24 samples' },

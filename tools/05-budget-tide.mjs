@@ -20,7 +20,7 @@ setTool('budget-tide');
 const DAY = 86400000;
 const MONTH_START = Date.now() - 12 * DAY;   // simulate mid-month
 
-const e = sheet('budget-tide', [
+const e = await sheet('budget-tide', [
   // envelopes: monthly budgets (the only cells a person edits)
   { id: 'env.groceries', kind: 'value', value: { budget: 600, spent: 0 } },
   { id: 'env.dining',    kind: 'value', value: { budget: 200, spent: 0 } },

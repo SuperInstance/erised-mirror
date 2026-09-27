@@ -26,7 +26,7 @@ const TENANTS = {
   initech: { id: 'initech', tags: ['tenant:initech', 'tier:standard'] },
 };
 
-const e = sheet('approvals', [
+const e = await sheet('approvals', [
   // shared state
   { id: 'req.queue', kind: 'value', value: [], description: 'pending approval requests' },
   { id: 'req.decided', kind: 'value', value: [], description: 'decided requests' },

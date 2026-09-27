@@ -14,7 +14,49 @@
 import { execSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
-import { verifyChain as stoneVerify } from '../../quilt-stone/stone.mjs'; // THE STONE
+import { verifyChain as quiltVerifyChain, GENESIS_PREV } from '../quilt-toolkit.mjs';
+import { verifyStoneV1 } from './embassy-lib.mjs';
+
+// ── stoneVerify: local drop-in for the (absent) quilt-stone verifier ───────
+// This checkout is a standalone mirror: no sibling quilt-stone repo exists.
+// We dispatch on row_hash hex length to the two dialects we CAN verify
+// locally: 16-hex -> quilt-toolkit's fnv1a64 witness chain; 64-hex ->
+// embassy-lib's KAT-gated stone-v1 sha256 chain. Anything else is reported
+// honestly as ok:false rather than guessed at.
+//
+// Call contract (unchanged from the old import):
+//   stoneVerify(rows)                 -> {ok, tip, alg, genesis, why}
+//   stoneVerify(rows, genesisCandidate) -> same
+// tip/alg/genesis meaningful only when ok; why only when !ok.
+export function stoneVerify(rows, genesisCandidate) {
+  const first = Array.isArray(rows) ? rows.find((r) => r && typeof r === 'object' && typeof r.row_hash === 'string') : null;
+  const hash = first ? first.row_hash : '';
+  const len = hash.length;
+
+  if (len === 16) {
+    // fnv1a64 dialect. quiltVerifyChain has a FIXED genesis (GENESIS_PREV);
+    // if a caller supplies a different candidate we cannot honestly try it.
+    if (genesisCandidate !== undefined && genesisCandidate !== GENESIS_PREV) {
+      return { ok: false, why: 'fnv1a64 dialect has fixed genesis ' + GENESIS_PREV + '; candidate ' + JSON.stringify(genesisCandidate) + ' not applicable' };
+    }
+    const v = quiltVerifyChain(rows);
+    if (v && v.ok) {
+      return { ok: true, tip: v.head, alg: 'quilt-fnv1a64', genesis: GENESIS_PREV };
+    }
+    return { ok: false, why: 'chain broken at row ' + (v ? v.brokenAt : '?') };
+  }
+
+  if (len === 64) {
+    // stone-v1 dialect.
+    const v = verifyStoneV1(rows, genesisCandidate);
+    if (v && v.ok) {
+      return { ok: true, tip: v.tip, alg: 'stone-v1', genesis: v.genesis };
+    }
+    return { ok: false, why: v && v.why ? v.why : 'stone-v1 verification failed' + (v && v.firstBadIndex != null ? ' at row ' + v.firstBadIndex : '') };
+  }
+
+  return { ok: false, why: 'row_hash length ' + len + ' matches no known local dialect (expected 16 hex=quilt-fnv1a64 or 64 hex=stone-v1)' };
+}
 
 // sh(): probe runner. stderr silenced (a missing 'origin' remote is an
 // expected honest null, not console noise — receipted Task 30-b); parsed

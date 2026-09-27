@@ -1,9 +1,9 @@
 {
   "tool": "erised-embassy",
-  "run_at": "2026-09-27T05:27:44.556Z",
-  "wave": "wave-002",
-  "snapshot_digest": "9877066336a5edee",
-  "local_head": "b6eac288b8bf",
+  "run_at": "2026-09-27T08:21:46.765Z",
+  "wave": "wave-004",
+  "snapshot_digest": "2a419dd0fd25f1af",
+  "local_head": "7c32d19bdb70",
   "crown_jewel": {
     "repo": "pong-quilt",
     "path": "checkpoints/stone-v1.json",
@@ -16,8 +16,8 @@
     "verdict": {
       "ok": true,
       "brokenAt": null,
-      "head": "771bcd7b7ac3cd69",
-      "count": 3
+      "head": "f65996c501ba99da",
+      "count": 5
     },
     "rows": [
       {
@@ -61,6 +61,40 @@
         "seq": 2,
         "prev_hash": "3a39241bb35b13f2",
         "row_hash": "771bcd7b7ac3cd69"
+      },
+      {
+        "event": "embassy-wave",
+        "wave": "wave-003",
+        "digest": "2a419dd0fd25f1af",
+        "census_repos": 0,
+        "foreign_repos": 0,
+        "foreign_active_today": 0,
+        "foreign_active_week": 0,
+        "probes": 10,
+        "chains_found": 2,
+        "chains_verified": 1,
+        "edges": 0,
+        "self": null,
+        "seq": 3,
+        "prev_hash": "771bcd7b7ac3cd69",
+        "row_hash": "7f642f306ee464e4"
+      },
+      {
+        "event": "embassy-wave",
+        "wave": "wave-004",
+        "digest": "2a419dd0fd25f1af",
+        "census_repos": 0,
+        "foreign_repos": 0,
+        "foreign_active_today": 0,
+        "foreign_active_week": 0,
+        "probes": 10,
+        "chains_found": 2,
+        "chains_verified": 1,
+        "edges": 0,
+        "self": null,
+        "seq": 4,
+        "prev_hash": "7f642f306ee464e4",
+        "row_hash": "f65996c501ba99da"
       }
     ]
   }

@@ -18,7 +18,7 @@ import { sheet, WitnessLog, localEmbed, cosine, check, done, setTool, panel, kv,
 
 setTool('ocean-recall');
 
-const e = sheet('ocean-recall', [
+const e = await sheet('ocean-recall', [
   { id: 'config.threshold', kind: 'value', value: 0.35, description: 'recall hit threshold — tuned to this geometry (a BGE deployment would sit near 0.92)' },
 
   { id: 'ocean.memory', kind: 'value', value: [], description: 'the memory: [{id, text, vec, meta, ts}]' },

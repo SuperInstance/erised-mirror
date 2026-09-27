@@ -1,185 +1,43 @@
 {
   "tool": "erised",
-  "run_at": "2026-09-27T03:03:32.468Z",
+  "run_at": "2026-09-27T08:22:36.081Z",
   "is": [
     {
-      "name": "exoj",
-      "commits": 2,
-      "first": "2026-09-26",
-      "last": "2026-09-26",
-      "subject": "exoj: core JS port + 4 experiments — POCs 8/8 PASS; E-X1 seed policy VIO",
-      "dirty": 0,
-      "remote": false
-    },
-    {
-      "name": "fleet-seeds",
-      "commits": 2,
+      "name": "erised-mirror",
+      "commits": 7,
       "first": "2026-09-27",
       "last": "2026-09-27",
-      "subject": "tavern round two: LIVE guests sealed as-said — MOTH graph-v1 quantum coi",
-      "dirty": 0,
-      "remote": false
-    },
-    {
-      "name": "quilt-arch",
-      "commits": 3,
-      "first": "2026-09-26",
-      "last": "2026-09-27",
-      "subject": "E-C1 crash-consistency chaos: arch/persist.mjs (persistence + torn-toler",
-      "dirty": 0,
-      "remote": false
-    },
-    {
-      "name": "quilt-dba",
-      "commits": 4,
-      "first": "2026-09-26",
-      "last": "2026-09-26",
-      "subject": "E-D4+E-D5: EXACT TIME TRAVEL for the developmental agent + the fold curr",
-      "dirty": 0,
-      "remote": false
-    },
-    {
-      "name": "quilt-murmur",
-      "commits": 18,
-      "first": "2026-09-26",
-      "last": "2026-09-27",
-      "subject": "E42 align change-point: the FIFTH detector axis dies AND takes the E41 p",
-      "dirty": 0,
+      "subject": "quilt-tools: embassy wave-002 — the self-referential smoke: the embassy ",
+      "dirty": 17,
       "remote": true
-    },
-    {
-      "name": "quilt-raw",
-      "commits": 2,
-      "first": "2026-09-26",
-      "last": "2026-09-26",
-      "subject": "quilt-raw: v→L→G→v′ executable core + exact-rewind crown",
-      "dirty": 0,
-      "remote": false
-    },
-    {
-      "name": "quilt-silicon",
-      "commits": 3,
-      "first": "2026-09-26",
-      "last": "2026-09-26",
-      "subject": "quilt-silicon: E-S1 executed — R1 schedule-invariance PASS (8 schedules ",
-      "dirty": 0,
-      "remote": false
-    },
-    {
-      "name": "quilt-stone",
-      "commits": 4,
-      "first": "2026-09-26",
-      "last": "2026-09-26",
-      "subject": "quilt-stone: E-ST1 CONFORMANCE GREEN — R1 42/42 sibling chains verify un",
-      "dirty": 0,
-      "remote": false
-    },
-    {
-      "name": "quilt-tools",
-      "commits": 2,
-      "first": "2026-09-27",
-      "last": "2026-09-27",
-      "subject": "quilt-tools: tool 12 ERISED-TRENDS — the mirror diffed over waves (trend",
-      "dirty": 4,
-      "remote": false
-    },
-    {
-      "name": "ropesight",
-      "commits": 3,
-      "first": "2026-09-26",
-      "last": "2026-09-27",
-      "subject": "E-RS1 ropesight: the allegory executes — 5 methods with computed periods",
-      "dirty": 0,
-      "remote": false
-    },
-    {
-      "name": "yiluodi",
-      "commits": 2,
-      "first": "2026-09-27",
-      "last": "2026-09-27",
-      "subject": "outputs: honest L4 re-run receipt — R3 wall-clock timing varies by run (",
-      "dirty": 0,
-      "remote": false
     }
   ],
   "chains": {
-    "ok": 47,
+    "ok": 2,
     "bad": 0,
-    "asFound": 4
+    "asFound": 0
   },
-  "open": [
-    "Task ID: 21 (push log + parked brief)",
-    "Task: record pushes; park the E40 brief for the next wave",
-    "- Honest limits: JS BigInt/Rust-vs-WGSL divergence tested against the seed's TEXT (no Rust/WGSL compiler in this lane — the Python int reference is the independent substrate); correlate null-corner semantics are a defined contract (seed leaves the corner faulting); journal git-commit tier parked",
-    "- PARKED one-liners in code: compute substrate dispatcher, network transports, JEV oracle, deployment/git-commit",
-    "- E42 HANDOFF (parked): change-point/CUSUM on the ALIGN trajectory itself (relational statistic, self-baseline) — same-world ALIGN drops w1 0.633->0.485 post-flip, g1 sits AT the founder floor (0.438 vs 0.451 min); E38 killed CUSUM on residuals, never on ALIGN; price the floor first",
-    "Task: chose the direction (ExoJ-selected cross_instance -> E41), executed it directly after dispatch infra failure; 3 parked lanes (E-D4 exact-rewind checkpoints, quilt-silicon PTX emulator, E-D5 fold-curriculum) — briefs in this wave's dispatch attempts, retried as a batch",
-    "Task: new rolled token -> push everything; audit + adopt lanes 25-b/25-d; next wave",
-    "- Next wave: E42 ALIGN change-point (the receipted handoff), quilt-stone (unified receipt-chain module — one verifier for every repo's chain), ropesight (seed-story permutation-algebra rota module)",
-    "- NOT pushed (house rule: main pushes); siblings untouched (read-only)",
-    "- Back-burner seeded per the user's brief: BACKBURNER.md keeps the jigsaw vision whole + e_l3's two cents (exact 15-entry lookup, 0 ops vs 300000, pruning price curve 0 -> 4.8e-4) + the next unassigned cents",
-    "- PUSH BLOCKED (session has no GH token; push attempt failed with \"could not read Username\"; secret sweep CLEAN): local commit 784fd62 ready — needs a rolled token to create SuperInstance/yiluodi and push",
-    "- Standing state: 13 repos ours-and-synced (murmur dba fiction exoj raw arch silicon stone ropesight yiluodi fleet-seeds erised-mirror + murmur-remote), live lanes warm (MOTH + SystemOne keys in .env), next: E-C2 yiluodi chaos per the coin"
-  ],
-  "resonates": [
-    {
-      "a": "quilt-arch",
-      "b": "quilt-raw",
-      "cos": 0.743
-    },
-    {
-      "a": "quilt-arch",
-      "b": "quilt-silicon",
-      "cos": 0.637
-    },
-    {
-      "a": "quilt-arch",
-      "b": "ropesight",
-      "cos": 0.636
-    },
-    {
-      "a": "quilt-raw",
-      "b": "ropesight",
-      "cos": 0.627
-    },
-    {
-      "a": "quilt-raw",
-      "b": "quilt-silicon",
-      "cos": 0.586
-    },
-    {
-      "a": "quilt-silicon",
-      "b": "ropesight",
-      "cos": 0.576
-    }
-  ],
-  "edges": [
-    "fleet-seeds->quilt-stone",
-    "quilt-silicon->quilt-arch",
-    "quilt-tools->quilt-stone"
-  ],
+  "open": [],
+  "resonates": [],
+  "edges": [],
   "witness": {
     "verdict": {
       "ok": true,
       "brokenAt": null,
-      "head": "a6a3aeb678cb36dc",
+      "head": "17846fc83822d6b9",
       "count": 1
     },
     "rows": [
       {
         "event": "mirror-run",
-        "repos": 11,
-        "chains_ok": 47,
+        "repos": 1,
+        "chains_ok": 2,
         "chains_bad": 0,
-        "desires": 12,
-        "edges": [
-          "fleet-seeds->quilt-stone",
-          "quilt-silicon->quilt-arch",
-          "quilt-tools->quilt-stone"
-        ],
+        "desires": 0,
+        "edges": [],
         "seq": 0,
         "prev_hash": "0000000000000000",
-        "row_hash": "a6a3aeb678cb36dc"
+        "row_hash": "17846fc83822d6b9"
       }
     ]
   }

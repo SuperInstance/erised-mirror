@@ -39,7 +39,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { setTool, check, done, WitnessLog, verifyChain, fnv1a64, ANSI } from '../quilt-toolkit.mjs';
-import { canonicalJSON } from '../../quilt-stone/stone.mjs'; // OUR digest bookkeeping only (as tool 12)
+import { canonicalJSON } from './embassy-lib.mjs'; // OUR digest bookkeeping only (as tool 12) -- same STONE-SPEC §5 canonicalJSON, vendored locally (quilt-stone is not a sibling repo in this checkout)
 import { sh } from './erised-lib.mjs';                        // reuse, not fork: local head probe for the smoke
 import { loadToken, censusRepos, rawCDN, selfTestArithmetic, verifyStoneV1, parseChainArtifact, shapeOf } from './embassy-lib.mjs';
 

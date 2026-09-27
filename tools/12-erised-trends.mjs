@@ -26,7 +26,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { setTool, check, done, WitnessLog, verifyChain, localEmbed, cosine, ANSI, fnv1a64 } from '../quilt-toolkit.mjs';
-import { canonicalJSON } from '../../quilt-stone/stone.mjs';
+import { canonicalJSON } from './embassy-lib.mjs'; // OUR digest bookkeeping only (as tool 13) -- same STONE-SPEC §5 canonicalJSON, vendored locally (quilt-stone is not a sibling repo in this checkout)
 import { sh, discoverRepos, scanChains, openThreads, kinship, importEdges } from './erised-lib.mjs';
 
 setTool('erised-trends');
