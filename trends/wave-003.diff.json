@@ -1,0 +1,187 @@
+{
+  "meta": {
+    "from": "wave-002",
+    "to": "wave-003",
+    "generated_at": "2026-09-27T04:06:05.902Z",
+    "comparability": "derived from snapshot data only"
+  },
+  "diff": {
+    "from": "wave-002",
+    "to": "wave-003",
+    "repos_changed": [
+      {
+        "repo": "exoj",
+        "head": {
+          "from": "5849116ef8a6",
+          "to": "98000b0df7aa"
+        },
+        "commits": {
+          "from": 2,
+          "to": 5,
+          "delta": 3
+        }
+      },
+      {
+        "repo": "fleet-seeds",
+        "head": {
+          "from": "2c7a4446a4cf",
+          "to": "7fabe377eafb"
+        },
+        "commits": {
+          "from": 2,
+          "to": 4,
+          "delta": 2
+        }
+      },
+      {
+        "repo": "quilt-dba",
+        "head": {
+          "from": "04a5d292304c",
+          "to": "e8d37df104ea"
+        },
+        "commits": {
+          "from": 4,
+          "to": 6,
+          "delta": 2
+        }
+      },
+      {
+        "repo": "quilt-murmur",
+        "head": {
+          "from": "c5dcc30a752c",
+          "to": "f557112c89a4"
+        },
+        "commits": {
+          "from": 18,
+          "to": 19,
+          "delta": 1
+        }
+      },
+      {
+        "repo": "quilt-tools",
+        "head": {
+          "from": "729a390e1e82",
+          "to": "151e5573ad95"
+        },
+        "commits": {
+          "from": 2,
+          "to": 3,
+          "delta": 1
+        }
+      },
+      {
+        "repo": "yiluodi",
+        "head": {
+          "from": "83cade138cb2",
+          "to": "bb0cffb15c0f"
+        },
+        "commits": {
+          "from": 2,
+          "to": 4,
+          "delta": 2
+        }
+      }
+    ],
+    "repos_added": [],
+    "repos_removed": [],
+    "chains_grown": [
+      {
+        "repo": "fleet-seeds",
+        "file": "tavern/tavern_ledger.jsonl",
+        "links": {
+          "from": 12,
+          "to": 26
+        },
+        "tip": {
+          "from": "3f173f7db384ea4a02cbb9677f9cb6921b44805ac580c464ba7d66edb03e0611",
+          "to": "5b02adaa81a3332423790925001d0b139b82b3aa782cee886b80b66414a538e0"
+        },
+        "tip_moved": true
+      }
+    ],
+    "chains_shrunk": [],
+    "chains_new": [
+      {
+        "repo": "exoj",
+        "file": "experiments/outputs/receipts_ex4.jsonl",
+        "links": 13,
+        "tip": "3322c777688b05431569c81d582cf02d9a2a10722416b3e5b4d3c2edb0c360c8"
+      },
+      {
+        "repo": "exoj",
+        "file": "experiments/outputs/receipts_ex5.jsonl",
+        "links": 10,
+        "tip": "a53d551728c9cb5a0225e0a7ad116b2b768cc984edba90440c36952d2bfd4c81"
+      },
+      {
+        "repo": "quilt-dba",
+        "file": "experiments/outputs/receipts_ed6.jsonl",
+        "links": 11,
+        "tip": "0x0964722e3463820a"
+      },
+      {
+        "repo": "quilt-dba",
+        "file": "experiments/outputs/receipts_ed7.jsonl",
+        "links": 16,
+        "tip": "0x378fffb6e9d7ef61"
+      },
+      {
+        "repo": "quilt-murmur",
+        "file": "experiments/outputs/receipts_e43.jsonl",
+        "links": 19,
+        "tip": "0xe98a4eb442839929"
+      },
+      {
+        "repo": "quilt-tools",
+        "file": "trends/witness.jsonl",
+        "links": 3,
+        "tip": "971f71ffc0cb2578"
+      },
+      {
+        "repo": "yiluodi",
+        "file": "outputs/receipts_e_c2.jsonl",
+        "links": 15,
+        "tip": "0xf0a8a4f580c939a2"
+      }
+    ],
+    "chains_closed": [],
+    "threads": {
+      "from": 12,
+      "to": 12,
+      "new": 0,
+      "closed": 0,
+      "new_examples": [],
+      "closed_examples": []
+    },
+    "kinship": {
+      "top_changed": false,
+      "pairs": [
+        {
+          "a": "quilt-arch",
+          "b": "quilt-raw",
+          "cos": 0.743,
+          "from": 0.743,
+          "delta": 0
+        },
+        {
+          "a": "quilt-arch",
+          "b": "quilt-silicon",
+          "cos": 0.637,
+          "from": 0.637,
+          "delta": 0
+        },
+        {
+          "a": "quilt-arch",
+          "b": "ropesight",
+          "cos": 0.636,
+          "from": 0.636,
+          "delta": 0
+        }
+      ]
+    },
+    "edges_added": [
+      "exoj->quilt-dba"
+    ],
+    "edges_removed": []
+  }
+}

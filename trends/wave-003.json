@@ -1,0 +1,566 @@
+{
+  "meta": {
+    "wave": 3,
+    "label": "wave-003",
+    "tool": "erised-trends",
+    "captured_at": "2026-09-27T04:06:05.899Z",
+    "digest": "b7f72d9686066611",
+    "comparability": "data only; meta whitelisted out of comparison"
+  },
+  "data": {
+    "edges": [
+      "exoj->quilt-dba",
+      "fleet-seeds->quilt-stone",
+      "quilt-silicon->quilt-arch",
+      "quilt-tools->quilt-stone"
+    ],
+    "kinship_top3": [
+      {
+        "a": "quilt-arch",
+        "b": "quilt-raw",
+        "cos": 0.743
+      },
+      {
+        "a": "quilt-arch",
+        "b": "quilt-silicon",
+        "cos": 0.637
+      },
+      {
+        "a": "quilt-arch",
+        "b": "ropesight",
+        "cos": 0.636
+      }
+    ],
+    "open_threads": {
+      "count": 12,
+      "lines": [
+        "Task ID: 21 (push log + parked brief)",
+        "Task: record pushes; park the E40 brief for the next wave",
+        "- Honest limits: JS BigInt/Rust-vs-WGSL divergence tested against the seed's TEXT (no Rust/WGSL compiler in this lane — the Python int reference is the independent substrate); correlate null-corner semantics are a defined contract (seed leaves the corner faulting); journal git-commit tier parked",
+        "- PARKED one-liners in code: compute substrate dispatcher, network transports, JEV oracle, deployment/git-commit",
+        "- E42 HANDOFF (parked): change-point/CUSUM on the ALIGN trajectory itself (relational statistic, self-baseline) — same-world ALIGN drops w1 0.633->0.485 post-flip, g1 sits AT the founder floor (0.438 vs 0.451 min); E38 killed CUSUM on residuals, never on ALIGN; price the floor first",
+        "Task: chose the direction (ExoJ-selected cross_instance -> E41), executed it directly after dispatch infra failure; 3 parked lanes (E-D4 exact-rewind checkpoints, quilt-silicon PTX emulator, E-D5 fold-curriculum) — briefs in this wave's dispatch attempts, retried as a batch",
+        "Task: new rolled token -> push everything; audit + adopt lanes 25-b/25-d; next wave",
+        "- Next wave: E42 ALIGN change-point (the receipted handoff), quilt-stone (unified receipt-chain module — one verifier for every repo's chain), ropesight (seed-story permutation-algebra rota module)",
+        "- NOT pushed (house rule: main pushes); siblings untouched (read-only)",
+        "- Back-burner seeded per the user's brief: BACKBURNER.md keeps the jigsaw vision whole + e_l3's two cents (exact 15-entry lookup, 0 ops vs 300000, pruning price curve 0 -> 4.8e-4) + the next unassigned cents",
+        "- PUSH BLOCKED (session has no GH token; push attempt failed with \"could not read Username\"; secret sweep CLEAN): local commit 784fd62 ready — needs a rolled token to create SuperInstance/yiluodi and push",
+        "- Standing state: 13 repos ours-and-synced (murmur dba fiction exoj raw arch silicon stone ropesight yiluodi fleet-seeds erised-mirror + murmur-remote), live lanes warm (MOTH + SystemOne keys in .env), next: E-C2 yiluodi chaos per the coin"
+      ]
+    },
+    "repos": [
+      {
+        "name": "exoj",
+        "head": "98000b0df7aa",
+        "commits": 5,
+        "dirty": 0,
+        "chains": [
+          {
+            "file": "experiments/outputs/receipts_ex0.jsonl",
+            "links": 4,
+            "ok": true,
+            "tip": "7c2a6341828c3506eef1c7e21dd8766246f2b6a5745f4b01e64ba5f71d3c5792",
+            "alg": "sha256-canonical",
+            "genesis": "EXOJ-RECEIPTS-GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_ex1.jsonl",
+            "links": 5,
+            "ok": true,
+            "tip": "35a857f8394295a4403a2e2c6578b65de3362ca54004c4f0d9cf21c108e20420",
+            "alg": "sha256-canonical",
+            "genesis": "EXOJ-RECEIPTS-GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_ex2.jsonl",
+            "links": 6,
+            "ok": true,
+            "tip": "4b39dd1be7993a36aa186cb9bb17c48e8d6804fae8e0c3acd799258b0fe235fd",
+            "alg": "sha256-canonical",
+            "genesis": "EXOJ-RECEIPTS-GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_ex3.jsonl",
+            "links": 6,
+            "ok": true,
+            "tip": "2efa58c8000b669d6df2a9d3e3d382fc4e6d5f62d472b9e2da5614e53ab27c23",
+            "alg": "sha256-canonical",
+            "genesis": "EXOJ-RECEIPTS-GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_ex4.jsonl",
+            "links": 13,
+            "ok": true,
+            "tip": "3322c777688b05431569c81d582cf02d9a2a10722416b3e5b4d3c2edb0c360c8",
+            "alg": "sha256-canonical",
+            "genesis": "EXOJ-RECEIPTS-GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_ex5.jsonl",
+            "links": 10,
+            "ok": true,
+            "tip": "a53d551728c9cb5a0225e0a7ad116b2b768cc984edba90440c36952d2bfd4c81",
+            "alg": "sha256-canonical",
+            "genesis": "EXOJ-RECEIPTS-GENESIS"
+          }
+        ]
+      },
+      {
+        "name": "fleet-seeds",
+        "head": "7fabe377eafb",
+        "commits": 4,
+        "dirty": 0,
+        "chains": [
+          {
+            "file": "tavern/tavern_ledger.jsonl",
+            "links": 26,
+            "ok": true,
+            "tip": "5b02adaa81a3332423790925001d0b139b82b3aa782cee886b80b66414a538e0",
+            "alg": "stone-v1",
+            "genesis": "STONE-GENESIS-1"
+          }
+        ]
+      },
+      {
+        "name": "quilt-arch",
+        "head": "249d526003e8",
+        "commits": 3,
+        "dirty": 0,
+        "chains": [
+          {
+            "file": "experiments/outputs/receipts_e_a1.jsonl",
+            "links": 10,
+            "ok": true,
+            "tip": "0xb15e57f21acbc84d",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_e_c1.jsonl",
+            "links": 15,
+            "ok": true,
+            "tip": "0xae1a15d45d43576e",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          }
+        ]
+      },
+      {
+        "name": "quilt-dba",
+        "head": "e8d37df104ea",
+        "commits": 6,
+        "dirty": 0,
+        "chains": [
+          {
+            "file": "experiments/outputs/receipts_ed1.jsonl",
+            "links": 21,
+            "ok": true,
+            "tip": "0xdbb7c528df7b9471",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_ed2.jsonl",
+            "links": 28,
+            "ok": true,
+            "tip": "0x3a82ee3e58d807f0",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_ed3.jsonl",
+            "links": 17,
+            "ok": true,
+            "tip": "0xdc299e3be632f792",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_ed4.jsonl",
+            "links": 17,
+            "ok": true,
+            "tip": "0xfbe8d28d576d39b4",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_ed5.jsonl",
+            "links": 18,
+            "ok": true,
+            "tip": "0xc6bf37010a2bdfd6",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_ed6.jsonl",
+            "links": 11,
+            "ok": true,
+            "tip": "0x0964722e3463820a",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_ed7.jsonl",
+            "links": 16,
+            "ok": true,
+            "tip": "0x378fffb6e9d7ef61",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          }
+        ]
+      },
+      {
+        "name": "quilt-murmur",
+        "head": "f557112c89a4",
+        "commits": 19,
+        "dirty": 0,
+        "chains": [
+          {
+            "file": "experiments/outputs/receipts_e15.jsonl",
+            "links": 52,
+            "ok": true,
+            "tip": "0xce3b3f8b2b0d21e7",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_e16.jsonl",
+            "links": 13,
+            "ok": true,
+            "tip": "0xc715da19582be6c2",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_e17.jsonl",
+            "links": 10,
+            "ok": true,
+            "tip": "0x4340155657c52031",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_e18.jsonl",
+            "links": 6,
+            "ok": true,
+            "tip": "0x4aba03a8a5ff81d9",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_e20.jsonl",
+            "links": 59,
+            "ok": true,
+            "tip": "0x69fd6fa178c121b9",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_e21.jsonl",
+            "links": 16,
+            "ok": true,
+            "tip": "0xcff31ad2b24cbe48",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_e22.jsonl",
+            "links": 16,
+            "ok": true,
+            "tip": "0x15aa95006425ae06",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_e23.jsonl",
+            "links": 49,
+            "ok": true,
+            "tip": "0x4d71b72460e81c01",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_e24.jsonl",
+            "links": 14,
+            "ok": true,
+            "tip": "0x6f54870cee35d27e",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_e25.jsonl",
+            "links": 17,
+            "ok": true,
+            "tip": "0x7005fd9c200cb7b4",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_e26.jsonl",
+            "links": 129,
+            "ok": true,
+            "tip": "0x9288b3a86717170f",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_e27.jsonl",
+            "links": 14,
+            "ok": true,
+            "tip": "0xd7445dcd90b577a3",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_e28.jsonl",
+            "links": 49,
+            "ok": true,
+            "tip": "0xd9ad436ea2bcc64f",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_e31.jsonl",
+            "links": 14,
+            "ok": true,
+            "tip": "0x77d91b1f43a3ec2c",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_e33.jsonl",
+            "links": 15,
+            "ok": true,
+            "tip": "0xce4ed81d365901d1",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_e34.jsonl",
+            "links": 10,
+            "ok": true,
+            "tip": "0x5e8830ae132a0a66",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_e35.jsonl",
+            "links": 19,
+            "ok": true,
+            "tip": "0x5fe7ed978f78ae5e",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_e36.jsonl",
+            "links": 15,
+            "ok": true,
+            "tip": "0xf6cd43aa98375565",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_e37.jsonl",
+            "links": 15,
+            "ok": true,
+            "tip": "0x167c9ff9c196a71c",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_e38.jsonl",
+            "links": 16,
+            "ok": true,
+            "tip": "0x75ab4d02f3181ca4",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_e39.jsonl",
+            "links": 19,
+            "ok": true,
+            "tip": "0x2743856b93de03ee",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_e40.jsonl",
+            "links": 19,
+            "ok": true,
+            "tip": "0xa47fd893f54d8d17",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_e41.jsonl",
+            "links": 6,
+            "ok": true,
+            "tip": "0xece28a9ba65b01de",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_e42.jsonl",
+            "links": 19,
+            "ok": true,
+            "tip": "0xf38fe005bcea56fa",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_e43.jsonl",
+            "links": 19,
+            "ok": true,
+            "tip": "0xe98a4eb442839929",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts_tools.jsonl",
+            "links": 42,
+            "ok": true,
+            "tip": "0x0b7fd78d55363d63",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "experiments/outputs/receipts.jsonl",
+            "links": 8,
+            "ok": true,
+            "tip": "0xe667f6826b5d8463",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          }
+        ]
+      },
+      {
+        "name": "quilt-raw",
+        "head": "e759163f85f5",
+        "commits": 2,
+        "dirty": 0,
+        "chains": [
+          {
+            "file": "experiments/outputs/receipts_raw1.jsonl",
+            "links": 10,
+            "ok": true,
+            "tip": "0xc2c0012e1f8dc4f8",
+            "alg": "fnv1a64-rawpipe",
+            "genesis": "gen0"
+          }
+        ]
+      },
+      {
+        "name": "quilt-silicon",
+        "head": "83b2e4b9ca7d",
+        "commits": 3,
+        "dirty": 0,
+        "chains": [
+          {
+            "file": "experiments/outputs/receipts_e_s1.jsonl",
+            "links": 9,
+            "ok": true,
+            "tip": "0xdb769afae56fc21b",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          }
+        ]
+      },
+      {
+        "name": "quilt-stone",
+        "head": "1f6036a428cb",
+        "commits": 4,
+        "dirty": 0,
+        "chains": [
+          {
+            "file": "experiments/outputs/receipts_e_st1.jsonl",
+            "links": 53,
+            "ok": true,
+            "tip": "db7e897d8cb1d02a06d489b41659832e4b1ad4d15a592f626666878dd4d135ea",
+            "alg": "stone-v1",
+            "genesis": "STONE-GENESIS-1"
+          }
+        ]
+      },
+      {
+        "name": "quilt-tools",
+        "head": "151e5573ad95",
+        "commits": 3,
+        "dirty": 0,
+        "chains": [
+          {
+            "file": "trends/witness.jsonl",
+            "links": 3,
+            "ok": true,
+            "tip": "971f71ffc0cb2578",
+            "alg": "fnv1a64-quant",
+            "genesis": "0000000000000000"
+          }
+        ]
+      },
+      {
+        "name": "ropesight",
+        "head": "d8b1bb40fd9f",
+        "commits": 3,
+        "dirty": 0,
+        "chains": [
+          {
+            "file": "experiments/outputs/receipts_e_rs1.jsonl",
+            "links": 10,
+            "ok": true,
+            "tip": "0xf0b5521c5b4ab146",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          }
+        ]
+      },
+      {
+        "name": "yiluodi",
+        "head": "bb0cffb15c0f",
+        "commits": 4,
+        "dirty": 0,
+        "chains": [
+          {
+            "file": "outputs/receipts_e_c2.jsonl",
+            "links": 15,
+            "ok": true,
+            "tip": "0xf0a8a4f580c939a2",
+            "alg": "fnv1a64-fleet",
+            "genesis": "GENESIS"
+          },
+          {
+            "file": "outputs/receipts_e_l1.jsonl",
+            "links": 10,
+            "ok": true,
+            "tip": "0xa8251fae21ddac37",
+            "alg": "fnv1a64-fleet",
+            "genesis": "YILUODI-E-L1-GENESIS"
+          },
+          {
+            "file": "outputs/receipts_e_l2.jsonl",
+            "links": 9,
+            "ok": true,
+            "tip": "0x3c4c48030dc39b88",
+            "alg": "fnv1a64-fleet",
+            "genesis": "YILUODI-E-L2-GENESIS"
+          },
+          {
+            "file": "outputs/receipts_e_l3.jsonl",
+            "links": 6,
+            "ok": true,
+            "tip": "0x105e4fb30bba5203",
+            "alg": "fnv1a64-fleet",
+            "genesis": "YILUODI-E-L3-GENESIS"
+          },
+          {
+            "file": "outputs/receipts_e_l4.jsonl",
+            "links": 6,
+            "ok": true,
+            "tip": "0x3c2d38380d721d5d",
+            "alg": "fnv1a64-fleet",
+            "genesis": "YILUODI-E-L4-GENESIS"
+          }
+        ]
+      }
+    ]
+  }
+}
