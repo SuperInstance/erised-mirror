@@ -1,16 +1,16 @@
 {
   "tool": "erised-trends",
-  "run_at": "2026-09-27T03:03:20.005Z",
+  "run_at": "2026-09-27T04:06:05.904Z",
   "mode": "capture+diff",
-  "wave": "wave-002",
-  "snapshot_digest": "b59654c599702964",
-  "prior": "wave-001",
+  "wave": "wave-003",
+  "snapshot_digest": "b7f72d9686066611",
+  "prior": "wave-002",
   "witness": {
     "verdict": {
       "ok": true,
       "brokenAt": null,
-      "head": "971f71ffc0cb2578",
-      "count": 3
+      "head": "504394b2bc92c73c",
+      "count": 4
     },
     "rows": [
       {
@@ -50,6 +50,21 @@
         "seq": 2,
         "prev_hash": "96246af85edea321",
         "row_hash": "971f71ffc0cb2578"
+      },
+      {
+        "event": "wave-capture",
+        "wave": "wave-003",
+        "digest": "b7f72d9686066611",
+        "repos": 11,
+        "commits": 56,
+        "chains": 53,
+        "threads": 12,
+        "kin_top": "quilt-arch~quilt-raw@0.743",
+        "prior": "wave-002",
+        "diff": "6 repo changes, 1 chain moves, threads 12→12",
+        "seq": 3,
+        "prev_hash": "971f71ffc0cb2578",
+        "row_hash": "504394b2bc92c73c"
       }
     ]
   }
